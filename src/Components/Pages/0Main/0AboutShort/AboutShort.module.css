@@ -1,0 +1,66 @@
+
+.top {
+    width: 100%;
+    min-height: 588px;
+    background-color: #F4F9FF;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+}
+
+.topText {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    gap: 50px;
+    flex: 1;
+    margin-left: 3%;
+    text-align: left;
+}
+
+.topText > h3 {
+    font-size: 40px;
+    color: #12724F;
+    font-weight: 700;
+    margin: 0;
+}
+
+.topText > p {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    width: 60%;
+}
+
+.topText > a {
+    width: fit-content;
+}
+
+.topPic {
+    position: relative;
+    flex: 1;
+    left: -50px;
+}
+
+.topPic > img:first-child {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 59%;
+    height: auto;
+}
+
+.topPic > img:last-child {
+    top: 33%;
+    right: 4%;
+    position: absolute;
+    width: 35%;
+    height: auto;
+}
+
+@media screen and (max-width: 625px) {
+    .topPic {
+        display: none;
+    }
+}

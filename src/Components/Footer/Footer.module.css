@@ -1,0 +1,108 @@
+.footer {
+    height: fit-content;
+    background-color: #12724F;
+    width: 100%;
+    padding-top: 50px;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 12.37px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer > div {
+    margin-top: 1%;
+}
+
+
+.links > header, .contactUs > header, .findUs > header {
+    font-size: 24.75px;
+}
+
+.links > ul {
+    list-style-image: url('../../assets/images/ul-round.png');
+    padding: 0 0 0 7.5%;
+    width: max-content;
+    margin-top: 15%;
+}
+
+.links > ul > li {
+    font-weight: 700;
+}
+
+.links > ul > li > a {
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+.contactUs > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.contactUs > header {
+    margin-bottom: 15%;
+}
+
+.contactUs > div > img {
+    height: fit-content;
+}
+
+.contactUs > div > p {
+    margin: 0;
+}
+
+
+.findUs > .icons {
+    display: flex;
+    justify-content: center;
+    gap: 18.4px;
+    align-items: center;
+    margin-top: 40%;
+    margin-left: -1%;
+}
+
+.findUs > .icons > img {
+    height: fit-content;
+}
+
+.findUs > .icons > a {
+    width: fit-content;
+}
+
+.copyrights {
+    align-self: center;
+    position: relative;
+    margin-top: 4%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17.36px;
+}
+
+
+@media screen and (max-width: 894px) { 
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper > div {
+        margin-top: 5%;
+    }
+
+    .wrapper > .links > ul {
+        margin-top: 5%;
+    }
+    .contactUs > header {
+        margin-bottom: 5%;
+    }
+    .findUs > .icons {
+        margin-top: 10%;
+    }
+}

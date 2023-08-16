@@ -1,0 +1,11 @@
+@import url('http://api.mamikonyan.io/fonts/Bokonique/Bokonique-Regular.woff');
+
+.App {
+  text-align: center;
+  font-family: "Bokonique";
+  width: 100%;
+}
+
+::selection {
+  background-color: #12724F;
+}

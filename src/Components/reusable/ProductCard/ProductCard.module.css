@@ -1,0 +1,170 @@
+.cardWrapper {
+    width: 434px;
+    height: 482px;
+    border-radius: 14px;
+    background-color: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.image {
+    width: 339px;
+    height: 159.3px;
+    margin-top: 96px;
+    margin-left: 34px;
+}
+
+.name {
+    margin: 0 35px 0 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.details {
+    display: flex;
+    margin: 27px 1% 0 1%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dimensions {
+    color: #000000;
+    border: solid #000000 1px;
+    border-radius: 14px;
+    padding: 7px;
+}
+
+.dimensions > img {
+    filter: grayscale(100%);
+}
+
+.layers {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.button {
+    align-self: center;
+}
+
+.sterile {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #12724F;
+    box-shadow: 0px 21.444454193115234px 20.014822006225586px 0px #00000040;
+    padding: 5px 12px;
+    transform: rotate(45deg);
+    width: 110px;
+    position: relative;
+    left: 71.6%;
+    top: -83.8%;
+    text-align: center;
+}
+
+.sterile::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: rotate(45deg);
+    border-width: 19px 19px 0 18px;
+    border-color: #12724F transparent transparent transparent;
+    position: absolute;
+    right: -24px;
+    bottom: -3px;  
+}
+
+.sterile::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: rotate(-45deg);
+    border-width: 19px 18px 0 18px;
+    border-color: #12724F transparent transparent transparent;
+    position: absolute;
+    left: -24px;
+    bottom: -3px;
+}
+
+/* for napkin */
+
+.nsterile {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #12724F;
+    box-shadow: 0px 21.444454193115234px 20.014822006225586px 0px #00000040;
+    padding: 5px 12px;
+    transform: rotate(45deg);
+    width: 110px;
+    position: relative;
+    left: 71.6%;
+    top: -87.7%;
+    text-align: center;
+}
+
+.nsterile::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: rotate(45deg);
+    border-width: 19px 19px 0 18px;
+    border-color: #12724F transparent transparent transparent;
+    position: absolute;
+    right: -24px;
+    bottom: -3px;     
+}
+
+.nsterile::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: rotate(-45deg);
+    border-width: 19px 18px 0 18px;
+    border-color: #12724F transparent transparent transparent;
+    position: absolute;
+    left: -24px;
+    bottom: -3px;
+}
+
+
+.sterileHide {
+    display: none;
+}
+
+.uni {
+    cursor: pointer;
+}
+
+.selected {
+    color: #12724F;
+    border-color: #12724F;
+}
+.selected > img {
+    filter: grayscale(0%);
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .cardWrapper {
+        width: 80%;
+        /* margin-top: 96px; */
+        /* margin-left: 34px; */
+    }
+    .image {
+        width: 80%;
+    }
+    .sterile, .nsterile {
+        width: 28%;
+        left: 67.5%;
+    }
+    
+}

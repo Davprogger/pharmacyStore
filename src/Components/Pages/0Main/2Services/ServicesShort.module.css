@@ -1,0 +1,63 @@
+.servicesWrapper {
+    background-color: #F4F9FF;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 83px;
+    padding-bottom: 140px;
+    justify-content: space-evenly
+}
+
+.textp {
+    flex: 1;
+    margin-left: 3%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 41px;
+}
+
+.textp > header {
+    color: #12724F;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.textp > p { 
+    text-transform: lowercase;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.textp > p::first-letter {
+    text-transform: capitalize;
+}
+
+.textp > a {
+    width: fit-content;
+}
+
+.images {
+    flex: 1;
+    position: relative;
+    left: -50px;
+}
+
+.images > img:first-child {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 59%;
+    height: auto;
+}
+
+.images > img:last-child {
+    top: 45%;
+    right: 8%;
+    position: absolute;
+    width: 35%;
+    height: auto;
+}

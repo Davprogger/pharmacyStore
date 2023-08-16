@@ -1,0 +1,25 @@
+.partnersWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.partnersWrapper > header {
+    font-size: 40px;
+    font-weight: 700;
+    color: #12724F;
+}
+
+.partnersWrapper > a {
+    width: fit-content;
+    margin-top: 80px;
+}
+
+.partners {
+    margin-top: 33px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}

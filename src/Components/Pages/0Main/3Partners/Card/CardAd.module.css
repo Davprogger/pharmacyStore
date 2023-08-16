@@ -1,0 +1,15 @@
+.cardWrapper {
+    width: 434px;
+    height: 482px;
+    border-radius: 14px;
+    background-color: #DDDDDD;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 391.5px;
+    height: 261px;
+}

@@ -1,0 +1,27 @@
+.productsShortWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 39px;
+}
+
+.productsShortWrapper > header {
+    font-size: 40px;
+    color: #12724F;
+    font-weight: 700;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 33px;
+}
+
+.seeMore {
+    margin-top: 44px;
+}
+
+.seeMore > a {
+    width: fit-content;
+}
